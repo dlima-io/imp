@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presupuesto Q4 – Revisión final</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='2' width='26' height='28' rx='3' fill='%233b5b8c'/%3E%3Cpath d='M8 10h16M8 16h16M8 22h16M14 8v17' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <header id="top">
+    <div class="brand" title="Planillas">
+      <svg viewBox="0 0 32 32" width="34" height="34"><rect x="3" y="2" width="26" height="28" rx="3" fill="#3b5b8c"/><path d="M8 10h16M8 16h16M8 22h16M14 8v17" stroke="#fff" stroke-width="2"/></svg>
+    </div>
+    <div class="docinfo">
+      <div class="titlerow">
+        <input id="docTitle" spellcheck="false" value="Presupuesto Q4 – Revisión final">
+        <span class="ico" title="Destacar">☆</span>
+        <span id="saved" class="saved">Todos los cambios se guardaron</span>
+      </div>
+      <nav id="menus">
+        <span data-menu="archivo">Archivo</span><span data-menu="editar">Editar</span><span data-menu="ver">Ver</span>
+        <span data-menu="insertar">Insertar</span><span data-menu="formato">Formato</span><span data-menu="datos">Datos</span>
+        <span data-menu="herramientas">Herramientas</span><span data-menu="ayuda">Ayuda</span>
+      </nav>
+    </div>
+    <div class="right">
+      <div id="avatars"></div>
+      <button id="btnComments" class="iconbtn" title="Comentarios">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 4h16v12H8l-4 4z" fill="none" stroke="#444" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <span id="badge" hidden></span>
+      </button>
+      <button id="btnShare" class="share">Compartir</button>
+    </div>
+  </header>
+
+  <div id="toolbar">
+    <span class="tb" title="Deshacer">↶</span><span class="tb" title="Rehacer">↷</span><span class="tb" title="Imprimir">⎙</span>
+    <span class="sep"></span><span class="tb wide">100% ▾</span><span class="sep"></span>
+    <span class="tb">$</span><span class="tb">%</span><span class="tb small">.0</span><span class="tb small">.00</span><span class="tb small">123 ▾</span>
+    <span class="sep"></span><span class="tb wide">Arial ▾</span><span class="sep"></span><span class="tb">−</span><span class="tb box">10</span><span class="tb">+</span>
+    <span class="sep"></span><span class="tb b">B</span><span class="tb i">I</span><span class="tb s">S</span><span class="tb u">A</span>
+    <span class="sep"></span><span class="tb">▦</span><span class="tb">⊞</span><span class="sep"></span><span class="tb">≡</span><span class="tb">⊥</span>
+    <span class="sep"></span><span class="tb">🔗</span><span class="tb">▤</span><span class="tb">Σ</span>
+  </div>
+
+  <div id="fbar">
+    <div id="namebox">A1</div>
+    <div class="fx">fx</div>
+    <div id="fval"></div>
+  </div>
+
+  <main id="main">
+    <div id="gridwrap"><div id="grid"></div></div>
+    <aside id="side" hidden>
+      <div class="sidehead"><span>Comentarios</span><button id="sideClose" class="iconbtn" title="Cerrar">✕</button></div>
+      <div id="threads"></div>
+      <div class="newthread"><select id="newThread"></select></div>
+      <div id="msgs"></div>
+      <div class="composer">
+        <textarea id="msgIn" rows="2" placeholder="Comentar…"></textarea>
+        <div class="crow"><span id="composeNote"></span><button id="sendBtn">Comentar</button></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer id="tabs">
+    <span class="tb">+</span><span class="tb">☰</span>
+    <div id="tablist"></div>
+    <div id="status"></div>
+  </footer>
+</div>
+
+<div id="menuDrop" hidden></div>
+<div id="modal" hidden></div>
+<div id="toast" hidden></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
